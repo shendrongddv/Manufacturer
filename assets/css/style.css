@@ -112,3 +112,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+#home .container {
+  height: 600px;
+}
