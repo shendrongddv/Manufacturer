@@ -61,6 +61,15 @@ img {
 }
 
 /* HELPERS */
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-title {
+  max-width: 720px;
+  margin: 0 auto;
+}
 
 /* BTN */
 .btn {
