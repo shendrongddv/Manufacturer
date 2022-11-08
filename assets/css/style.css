@@ -30,17 +30,20 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  color: var(--color-dark);
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
 .h1,
 .h2,
 .h3,
 .h4,
 .h5,
 .h6 {
-  color: var(--color-dark);
-  font-family: var(--font-display);
-  font-weight: 700;
-  line-height: 1.7;
+  font-family: var(--color-body);
 }
 
 a {
@@ -100,4 +103,12 @@ img {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+/* HOME */
+#home {
+  background-image: url(../images/slide.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
