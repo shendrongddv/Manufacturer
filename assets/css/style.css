@@ -1,0 +1,103 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* font-family: 'Hind', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* VARIABLES */
+:root {
+  --color-brand: #566dfb;
+  --color-brand-dark: #263fd9;
+  --color-body: #848ab8;
+  --color-dark: #3a426d;
+  --font-body: "Hind", sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* RESET */
+body {
+  color: var(--color-body);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--color-dark);
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-brand);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HELPERS */
+
+/* BTN */
+.btn {
+  padding: 12px 24px;
+  border-radius: 999px;
+  border-width: 2px;
+  font-weight: 500;
+}
+
+.btn-brand,
+.btn-brand:focus {
+  background-color: var(--color-brand);
+  color: white;
+  border-color: var(--color-brand);
+}
+
+.btn-brand:hover {
+  background-color: var(--color-brand-dark);
+  color: white;
+  border-color: var(--color-brand);
+}
+
+/* NAVBAR */
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--color-brand);
+}
+.navbar-toggler {
+  border-radius: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
