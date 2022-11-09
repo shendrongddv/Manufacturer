@@ -120,16 +120,12 @@ img {
   box-shadow: none;
 }
 
-/* HOME */
-#home {
+/* HERO */
+#hero {
   background-image: url(../images/hero-1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-#home .container {
-  height: 600px;
 }
 
 /* SERVICES */
