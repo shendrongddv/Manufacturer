@@ -129,30 +129,38 @@ img {
 }
 
 /* SERVICES */
-.service {
-  position: relative;
-  background-color: red;
+.service-card {
   overflow: hidden;
-  aspect-ratio: 4 / 3;
+  position: relative;
+  aspect-ratio: 1 / 1;
 }
 
-.service img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.service .content {
+.service-card img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.service-card:hover img {
+  transform: scale(1.2);
+}
+
+.service-card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2;
   background-color: rgba(0, 0, 0, 0.8);
 }
