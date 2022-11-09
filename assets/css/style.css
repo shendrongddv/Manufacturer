@@ -80,7 +80,7 @@ img {
 /* BTN */
 .btn {
   padding: 12px 24px;
-  border-radius: 999px;
+  border-radius: 0;
   border-width: 2px;
   font-weight: 500;
 }
@@ -128,9 +128,9 @@ img {
   background-repeat: no-repeat;
 }
 
-#home .container {
+/* #home .container {
   height: 600px;
-}
+} */
 
 /* SERVICES */
 .service {
